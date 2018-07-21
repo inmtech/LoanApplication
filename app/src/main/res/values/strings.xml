@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LoanApplication</string>
+    <string name="api_key">API_KEY</string>
 </resources>

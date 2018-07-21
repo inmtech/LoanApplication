@@ -3,6 +3,8 @@ package com.app.hiten.loanapplication.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.app.hiten.loanapplication.R;
+
 public class PrefUtils {
     /**
      * Storing API Key in shared preferences to
@@ -17,7 +19,7 @@ public class PrefUtils {
  
     public static void storeApiKey(Context context, String apiKey) {
         SharedPreferences.Editor editor = getSharedPreferences(context).edit();
-        editor.putString("API_KEY", apiKey);
+        editor.putString(context.getString(R.string.api_key), apiKey);
         editor.commit();
     }
  
